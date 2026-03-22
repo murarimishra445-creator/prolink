@@ -8,7 +8,7 @@ const multer = require('multer');
 const fs = require('fs');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const JWT_SECRET = 'prolink_secret_2024_change_in_production';
 
 // Middleware
